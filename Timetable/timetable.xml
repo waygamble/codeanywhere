@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="timetable.xsl" type="text/xsl"?>
+<timetable>
+	<module>
+		<name>Web App Dev</name>
+		<faculty>
+			<lecturer>FS</lecturer>
+			<labAssist id="1">SC</labAssist>
+			<labAssist id="2">EMcL</labAssist>
+		</faculty>
+		<classes>
+			<lecture id="1">
+				<day>Mon</day>
+				<time>9am-11am</time>
+				<room type="computerLab">SCR2</room>
+			</lecture>
+			<lecture id="2">
+				<day>Thurs</day>
+				<time>2pm - 4pm</time>
+				<room type="computerLab">SCR1</room>
+			</lecture>
+			<lab>
+				<day>Fri</day>
+				<time>1pm - 3pm</time>
+				<room type="computerLab">SCR2</room>
+			</lab>
+		</classes>
+	</module>
+	<module>
+		<name>Intro. to DB</name>
+		<faculty>
+			<lecturer>PH</lecturer>
+		</faculty>
+		<exam/>
+		<classes>
+			<lecture>
+				<day>Mon</day>
+				<time>11am-1pm</time>
+				<room type="computerLab">SCR1</room>
+			</lecture>
+			<lab>
+				<day>Thurs</day>
+				<time>4pm - 5pm</time>
+				<room type="computerLab">SCR1</room>
+			</lab>
+		</classes>
+	</module>
+	<module>
+		<name>IT Proj Mgt</name>
+		<faculty>
+			<lecturer>EO'L</lecturer>
+		</faculty>
+		<exam/>
+		<classes>
+			<lecture>
+				<day>Mon</day>
+				<time>3pm - 5pm</time>
+				<room type="computerLab">SCR2</room>
+			</lecture>
+			<lab>
+				<day>Fri</day>
+				<time>11am - 12pm</time>
+				<room type="computerLab">SCR1</room>
+			</lab>
+		</classes>
+	</module>
+	<module>
+		<name>Fund Bus Anal</name>
+		<faculty>
+			<lecturer>DB</lecturer>
+		</faculty>
+		<exam/>
+		<classes>
+			<lecture>
+				<day>Tues</day>
+				<time>1pm - 3pm</time>
+				<room type="computerLab">SCR1</room>
+			</lecture>
+			<lab>
+				<day>Thurs</day>
+				<time>12pm - 1pm</time>
+				<room type="classroom">1.01</room>
+			</lab>
+		</classes>
+	</module>
+	<module>
+		<name>Software Apps for Bus</name>
+		<faculty>
+			<lecturer>JM</lecturer>
+		</faculty>
+		<exam/>
+		<classes>
+			<lecture>
+				<day>Tues</day>
+				<time>3pm - 5pm</time>
+				<room type="computerLab">SCR2</room>
+			</lecture>
+			<lab>
+				<day>Fri</day>
+				<time>9am-11am</time>
+				<room type="classroom">1.02</room>
+			</lab>
+		</classes>
+	</module>
