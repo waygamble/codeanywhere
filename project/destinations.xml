@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<destinations xmlns="http://www.w3schools.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <country id="c1">
+    <name>France</name>
+    <descriptions>blah, blah</descriptions>
+    <ratings>4</ratings>
+    <post>
+      
+    </post>
+ </country>
+  
+   <country id="c2">
+    <name>United Kingdom</name>
+    <descriptions>blah blah</descriptions>
+    <ratings>3</ratings>
+    <post>
+      <post_description/>
+      
+      <post_ratings/>
+      <comments/>
+    </post>
+  </country>
+  
+  <country id="c2">
+    <name>Spain</name>
+    <descriptions>blah blah</descriptions>
+    <ratings>5</ratings>
+    <post>
+      <post_description/>
+      <post_ratings/>
+      <comments/>
+    </post>
+  </country>
+
+
+</destinations>
