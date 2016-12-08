@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns:tns="http://www.w3schools.com"
+elementFormDefault="qualified">
+  
+  <complexType name="destinationsType">
+    <sequence>
+      <element name = "destinations" type = "destinationsType"></element>
+    </sequence>
+  </complexType>
+  
+  <complexType name = "destinationsType">
+    <sequence>
+      <element name = "name" type = "string"></element>
+      <element name = "descriptions" type = "string"></element>
+      <element name = "ratings" type = "integer"></element>
+    </sequence>
+  </complexType>
+  
+  <complexType name "post">
+    <sequence>
+      <element name "post_description" type = "string"></element>
+      <element name = "post_ratings" type = "integer"></element>
+      <element name = "comments" type = "string"></element>
+    </sequence>
+  </complexType>
+</schema>
+  
+  

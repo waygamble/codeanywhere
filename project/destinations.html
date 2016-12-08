@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>form page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("button").click(function(){
+            $("#comments_form").toggle();
+            });
+            $("#comments_form").hide();
+          });
+
+      
+    </script>
+  </head>
+  <body>
+    
+<script>
+displayCD(0);
+
+function displayCD(i) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            myFunction(this, i);
+        }
+    };
+    xmlhttp.open("GET", "destinations.xml", true);
+    xmlhttp.send();
+}
+
+function myFunction(xml, i) {
+    var xmlDoc = xml.responseXML; 
+    x = xmlDoc.getElementsByTagName("country");
+    document.getElementById("showPost").innerHTML =
+    "Artist: " +
+    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "<br>Title: " +
+    x[i].getElementsByTagName("descriptions")[0].childNodes[0].nodeValue +
+    "<br>Year: " + 
+    x[i].getElementsByTagName("ratings")[0].childNodes[0].nodeValue;
+}
+</script>
+
+    <div id = "post_form">
+    <form id = "form1" action = "form.php" method = "POST" >
+      Post:
+      <br/>
+      <textarea rows="4" cols="50" type = "text" name="post_description">Input text Here </textarea>
+      <br/>
+      
+    <input type = "submit" form = "form1">
+            
+    </form>
+    </div>
+    
+    <div id='showPost'></div><br/>
+    <button>Write Comments</button>
+    
+    <div id = "comments_form">
+      <form id = "form2" action = "form2.php" method = "POST" >
+        Rate:
+        <br/>
+        <select name = "ratings" form = "form2">
+          <option value = "1">1</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+          <option value = "4">4</option>
+          <option value = "5">5</option>
+          
+        </select>
+        <br/>
+        
+        Comments:
+        <br/>
+      <textarea rows="4" cols="50" type = "text" name="comments">Input text Here </textarea>
+      <br/>
+      <input type = "submit" form = "form2" >
+     </form>
+      
+    </div>
+    
+    
+  </body>
+  
+  
+</html>
+
+

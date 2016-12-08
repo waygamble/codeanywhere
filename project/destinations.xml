@@ -6,8 +6,10 @@
     <descriptions>blah, blah</descriptions>
     <ratings>4</ratings>
     <post>
-      
-    </post>
+      <comments>
+        
+      </comments>
+    <post_description>post go here</post_description><post_username>username goes here</post_username></post>
  </country>
   
    <country id="c2">
@@ -16,9 +18,12 @@
     <ratings>3</ratings>
     <post>
       <post_description/>
-      
-      <post_ratings/>
-      <comments/>
+      <post_username/>
+      <comments>
+        <comments_username/>
+        <post_ratings/>
+        <comments/>
+      </comments>
     </post>
   </country>
   
@@ -28,8 +33,12 @@
     <ratings>5</ratings>
     <post>
       <post_description/>
-      <post_ratings/>
-      <comments/>
+      <post_username/>
+      <comments>
+        <comments_username/>
+        <post_ratings/>
+        <comments/>
+      </comments>
     </post>
   </country>
 
